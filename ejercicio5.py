@@ -34,7 +34,9 @@ while True:
         # Opción 2: Salir del bucle
         elif eleccion == 2:
             print("¡Espero verte luego!")
-            break  # Salir del bucle
+            break 
+        
+        # Salir del bucle solo se utiliza el break para finalizar. 
 
         # Opción no válida
         else:
@@ -43,4 +45,5 @@ while True:
     except ValueError:
         # Manejo de error si el usuario no ingresa un número válido
         print("Por favor, ingresa un número válido (1 o 2).")
-    break
+
+        #nota el break no se utiliza despues de except valueError ya que interumpe el bucle. 
