@@ -1,12 +1,12 @@
 # iniciar variables notal como lista 
 notas = []
-print("Ingresa las notas una por una (de 2.0 a 7.0). Escribe 'fin' para terminar.")
+print("Ingresa las notas una por una (de 2.0 a 7.0). Escribe 'salir' para terminar.")
 
 while True:
     entrada = input("Nota: ")
     
     # Verificar si el usuario escribió "fin"
-    if entrada.strip().lower() == "fin":
+    if entrada.strip().lower() == "salir":
         break   # para finalizar la ejecución 
     
     # Intentar convertir la entrada en un número
@@ -24,7 +24,7 @@ while True:
 # Calcular el promedio si hay notas ingresadas
 if notas:
     promedio = sum(notas) / len(notas)
-    print(f"\nEl promedio es: {promedio:.1f}") # El promedi se imprime con solo un decimal gracias a :.1f si son dos decimales seria :2.f 
+    print(f"\nEl promedio es: {promedio:.1f}") # El promedio se imprime con solo un decimal gracias a :.1f si son dos decimales seria :2.f 
     
     # Evaluar si aprobó o reprobó
     if promedio >= 4.0:
@@ -32,4 +32,4 @@ if notas:
     else:
         print("Reprobaste.")
 else:
-    print("\nNo se ingresaron notas.")
+    print("\nNo se ingresaron notas.") # imprimir el resultado
