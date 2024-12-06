@@ -1,6 +1,6 @@
 # iniciar variables notal como lista 
 notas = []
-print("Ingresa las notas una por una (de 2.0 a 7.0). Escribe 'salir' para terminar.")
+print("Ingresa las notas una por una (de 2.0 a 7.0). Escribe 'salir' para terminar.") # usaremos un decimal 
 
 while True:
     entrada = input("Nota: ")
@@ -19,7 +19,7 @@ while True:
         else:
             print("La nota debe estar entre 2.0 y 7.0. Inténtalo de nuevo.")
     except ValueError:
-        print("Por favor, introduce una nota válida o escribe 'fin' para terminar.")
+        print("Por favor, introduce una nota válida o escribe 'salir' para terminar.")
 
 # Calcular el promedio si hay notas ingresadas
 if notas:
